@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 12 22:41:10 BST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>27 seconds (27949 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>regression </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankManagerShouldAddCustomerSuccessfully()'><b>bankManagerShouldAddCustomerSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1184694332" onClick='toggleBox("Output-1184694332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1184694332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1184694332">
+Click on 'Bank Manager Login' Button<br><br/>
+Click on 'Add Customer' Button<br><br/>
+Enter First Name Sima to First Name field <br><br/>
+Enter Last Name Patel to Last Name field <br><br/>
+Enter Postcode HA39PK to Postcode field <br><br/>
+Click on 'Add Customer' Button<br><br/>
+Get Customer added successfully text : Customer added successfully<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankTest@a74868d</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankManagerShouldOpenAccountSuccessfully()'><b>bankManagerShouldOpenAccountSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-179060558" onClick='toggleBox("Output-179060558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-179060558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-179060558">
+Click on 'Bank Manager Login' Button<br><br/>
+Click on 'Open Account' Button<br><br/>
+Select Customer Just Added 'Harry Potter'<br><br/>
+Select Currency 'Pound'<br><br/>
+Click on 'Process' Button<br><br/>
+Get Account created successfully text : Account created successfully<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankTest@a74868d</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldDepositMoneySuccessfully()'><b>customerShouldDepositMoneySuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1082684443" onClick='toggleBox("Output-1082684443", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1082684443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1082684443">
+Click on 'Customer Login' Button<br><br/>
+Select name from drop down 'Harry Potter'<br><br/>
+Click on 'Login' Button<br><br/>
+Click on 'Deposit' Button<br><br/>
+Enter Deposit Amount 100 to Deposit Amount field <br><br/>
+Click on 'Deposit' Button<br><br/>
+Find Deposit Successful Message : Deposit Successful<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bank.testsuite.BankTest@a74868d</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldWithdrawMoneySuccessfully()'><b>customerShouldWithdrawMoneySuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-724886412" onClick='toggleBox("Output-724886412", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-724886412" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-724886412">
+Click on 'Customer Login' Button<br><br/>
+Select name from drop down 'Harry Potter'<br><br/>
+Click on 'Login' Button<br><br/>
+Click on 'Deposit' Button<br><br/>
+Enter Deposit Amount 100 to Deposit Amount field <br><br/>
+Click on 'Deposit' Button<br><br/>
+Click on 'Withdrawal' Button<br><br/>
+Enter Withdrawal Amount 50 to Withdrawal Amount field <br><br/>
+Click on 'Withdrawal' Button<br><br/>
+Find Withdrawal Successful Message : Transaction successful<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bank.testsuite.BankTest@a74868d</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldLoginAndLogoutSuceessfully()'><b>customerShouldLoginAndLogoutSuceessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-338765435" onClick='toggleBox("Output-338765435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-338765435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-338765435">
+Click on 'Customer Login' Button<br><br/>
+Select name from drop down 'Harry Potter'<br><br/>
+Click on 'Login' Button<br><br/>
+Find Logout Button : logout<br><br/>
+Click on 'Logout' Button<br><br/>
+Get Your Name text : Your Name<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankTest@a74868d</td></tr>
+</table><p>
+</body>
+</html>
